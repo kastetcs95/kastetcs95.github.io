@@ -1,0 +1,54 @@
+.promo {
+    background: rgba(190, 190, 190, 0.5);
+    padding-bottom: 30px;
+    &__header {
+        display: flex;
+        justify-content: space-between; 
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+    &__icon {
+        padding: 10px 0;
+        height: 100px;
+        img {
+            display: relative;
+            height: 100%;
+        }
+    }
+    &__menu {
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        padding: 0 20px;
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        
+        &:hover {
+            border-bottom: 1px solid black;
+        }
+    }
+    &__content {
+        
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__subtitle {
+        margin: 10px 20px 0 0;
+        text-align: justify;
+    }
+    &__img {
+        max-width: 400px;
+        height:200px;
+        img {
+            height: 100%;
+        }
+    }
+    &__title {
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+}

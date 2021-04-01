@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/about-me';
+@import 'blocks/skills';
+@import 'blocks/projects';
+@import 'blocks/footer';
+
+@media (max-width: 720px) {
+    .title-fz30 {
+        font-size: 25px;
+    }
+
+    .about-me {
+        &__subtitle {
+            line-height: 20px;
+            font-size: 15;
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .promo {
+        .title {
+            padding-top: 30px;
+            font-size: 20px;
+            padding-right: 50px;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__img {
+            // max-width: 200px;
+            height:150px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .about-me {
+        &__photo {
+            display: none;
+        }
+        &__subtitle {
+            line-height: 25px;
+            width: 100%;
+            margin-top: -20px;
+        }
+    }
+    .skills {
+        &__image {
+            display: none;
+        }
+        &__content {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 468px) {
+    .promo {
+        &__link {
+            font-size: 14px;
+            padding: 0 8px;
+        }
+        &__icon {
+            height: 70px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .projects {
+        &__link {
+            img {
+                
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 395px) {
+    .promo {
+        .title {
+            padding-top: 0px;
+            font-size: 15px;
+            padding-right: 50px;
+        }
+        &__img {
+            // max-width: 200px;
+            height:100px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            font-size: 10px;
+        }
+    }
+}

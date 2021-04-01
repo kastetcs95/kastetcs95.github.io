@@ -1,0 +1,22 @@
+.title {
+    font-size: 25px;
+    &-fz30 {
+        font-size: 30px;
+    }
+    &-fz25 {
+        font-size: 25px;
+        position: relative;
+        &:before {
+            content: '';
+            width:50px;
+            height: 2px;
+            background-color: rgba(39, 59, 173, 0.7);
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    &-fz15 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}

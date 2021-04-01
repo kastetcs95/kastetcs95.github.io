@@ -1,0 +1,64 @@
+.skills {
+    margin-top: 50px;
+    
+    &__title {
+        text-align: center;
+    }
+    &__wrapper {
+        margin: 50px 20px 0 20px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        span {
+            width: 1px;
+            background: rgba(0, 0, 0, .3);
+        }
+    }
+    &__item {
+        cursor: pointer;
+        padding: 0 10px;
+        &-active {
+            text-decoration: underline;
+        }
+    }
+    &__content {
+        width: 50%;
+        margin-right: 30px;
+        text-indent: 30px;
+        text-align: justify;
+    }
+    &__tabs {
+        margin-top: 30px;
+    }
+    &__tab {
+        display: none;
+        
+        &-active {
+            transition: 1s all;
+            display:flex
+        }
+    }
+    &__image {
+    width: 50%;
+    
+        img {
+            width: 100%;
+        }
+    }
+.faded {
+    animation-name: faded;
+    animation-duration: 1.5s;
+}
+
+@keyframes faded {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    
+}
