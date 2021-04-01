@@ -107,14 +107,18 @@ html, body {
 
 @media (max-width: 395px) {
     .promo {
+        &__title {
+            margin: 0;
+        }
         .title {
             padding-top: 0px;
-            font-size: 15px;
-            padding-left: 25px;
+            font-size: 25px;
+            padding-left: 30px;
         }
         &__img {
-            // max-width: 200px;
-            height:100px;
+            
+            // max-width: 200x;
+            height:70px;
             img {
                 height: 100%;
             }
