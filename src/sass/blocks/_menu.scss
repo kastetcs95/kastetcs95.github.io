@@ -1,0 +1,57 @@
+.menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: rgba(0,0,0, 0.5);
+    width: 100%; 
+    height: 100vh;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        height: 100vh;
+        background: white;
+    }
+    &__link {
+        color: rgba(0,0,0, 0.8);
+        text-decoration: none;
+        font-size: 40px;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }   
+}
+
+.slideShow {
+    left: 0;
+    animation-name: slideShow;
+    animation-duration: 0.5s;
+}
+
+.slideHide {
+    left: -100%;
+    animation-name: slideHide;
+    animation-duration: 0.5s;
+}
+
+@keyframes slideShow {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideHide {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}

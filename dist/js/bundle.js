@@ -2,6 +2,57 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/menu.js":
+/*!********************************!*\
+  !*** ./src/js/modules/menu.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "menu": () => (/* binding */ menu)
+/* harmony export */ });
+const menu = () => {
+    const burger = document.querySelector(".promo__burger"),
+          burgerSpan = document.querySelectorAll(".promo__burger span"),
+          menuWrapper = document.querySelector(".menu"),
+          menuLink = document.querySelectorAll(".menu__link"),
+          menuBlock = document.querySelector(".menu__block");
+
+    function hideMenu(element) {
+        element.classList.add("slideHide");
+        element.classList.remove("slideShow");
+        burgerSpan.forEach(item => {
+            item.classList.remove("promo__burger-active");
+        })
+    }
+
+    burger.addEventListener('click', () => {
+        menuWrapper.classList.remove("slideHide");
+        menuWrapper.classList.add("slideShow");
+        burgerSpan.forEach(item => {
+            item.classList.add("promo__burger-active");
+        })
+    })
+    menuWrapper.addEventListener('click', (e) => {
+        if (e.target.classList.contains("menu")) {
+            hideMenu(e.target);
+        }
+    })
+
+    menuBlock.addEventListener('click', (e) => {
+        menuLink.forEach((item) => {
+            if (e.target == item) {
+               hideMenu(menuWrapper);
+            }
+        })
+    })
+}
+
+
+
+/***/ }),
+
 /***/ "./src/js/modules/tabs.js":
 /*!********************************!*\
   !*** ./src/js/modules/tabs.js ***!
@@ -110,11 +161,14 @@ var __webpack_exports__ = {};
   \*************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menu */ "./src/js/modules/menu.js");
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Hello");
     (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_0__.tabs)();
+    (0,_modules_menu__WEBPACK_IMPORTED_MODULE_1__.menu)();
 })
 })();
 

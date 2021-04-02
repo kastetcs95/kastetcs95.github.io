@@ -25,6 +25,7 @@ html, body {
 @import 'blocks/skills';
 @import 'blocks/projects';
 @import 'blocks/footer';
+@import 'blocks/menu';
 
 @media (max-width: 720px) {
     .title-fz30 {
@@ -40,7 +41,7 @@ html, body {
     
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px){
     .promo {
         .title {
             padding-top: 30px;
@@ -70,11 +71,15 @@ html, body {
     }
     .skills {
         &__image {
-            display: none;
+            padding-top: 20px;
         }
         &__content {
             width: 100%;
             margin-right: 0;
+        }
+        &__tab-active {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -84,6 +89,7 @@ html, body {
         &__link {
             font-size: 14px;
             padding: 0 8px;
+            display: none;
         }
         &__icon {
             height: 70px;
@@ -91,6 +97,36 @@ html, body {
                 height: 100%;
             }
         }
+        &__burger {     
+            position: relative;
+            cursor: pointer;       
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            span {
+                position: absolute;
+                left: 0;
+                background: black;
+                height: 2px;
+                width: 100%;
+                
+                &:last-child {
+                    top: 10px;
+                }
+                
+            }
+            &-active {
+                &:nth-child(1){
+                    top: 10px;
+                    transform: rotate(135deg);
+                }         
+                &:nth-child(2) {
+                    transform: rotate(45deg);
+                    top: 8px;
+                }
+            }
+        }
+        
     }
     .projects {
         &__link {
