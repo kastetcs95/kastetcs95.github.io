@@ -26,8 +26,15 @@ html, body {
 @import 'blocks/projects';
 @import 'blocks/footer';
 @import 'blocks/menu';
+@import 'blocks/slider';
+@import 'blocks/stages';
 
 @media (max-width: 720px) {
+    .promo {
+        &__link {
+            font-size: 15px;
+        }
+    }
     .title-fz30 {
         font-size: 25px;
     }
@@ -45,7 +52,7 @@ html, body {
     .promo {
         .title {
             padding-top: 30px;
-            font-size: 20px;
+            font-size: 25px;
             padding-right: 50px;
         }
         &__subtitle {
@@ -82,6 +89,21 @@ html, body {
             align-items: center;
         }
     }
+    .slider {
+        &__text {
+            font-size: 15px;
+        }
+        &__item {
+            ul {
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+        &__prev, &__next {
+            max-width: 25px;
+        }
+    }
 }
 
 @media (max-width: 468px) {
@@ -99,6 +121,7 @@ html, body {
         }
         &__burger {     
             position: relative;
+            margin-left: 70%;
             cursor: pointer;       
             display: flex;
             flex-direction: column;
@@ -106,7 +129,7 @@ html, body {
             span {
                 position: absolute;
                 left: 0;
-                background: black;
+                background: rgb(47,53,59);
                 height: 2px;
                 width: 100%;
                 transition: 0.3s all;
@@ -164,6 +187,19 @@ html, body {
     .footer {
         &__info {
             font-size: 10px;
+        }
+    }
+    .slider {
+        &__text {
+            font-size: 10px;
+        }
+        &__item {
+            ul {
+                padding-right: 5px;
+                li {
+                    font-size: 8px;
+                }
+            }
         }
     }
 }

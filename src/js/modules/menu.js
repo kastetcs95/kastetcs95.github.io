@@ -4,7 +4,6 @@ const menu = () => {
           menuWrapper = document.querySelector(".menu"),
           menuLink = document.querySelectorAll(".menu__link"),
           menuBlock = document.querySelector(".menu__block");
-
     function hideMenu(element) {
         element.classList.add("slideHide");
         element.classList.remove("slideShow");
@@ -19,7 +18,9 @@ const menu = () => {
         burgerSpan.forEach(item => {
             item.classList.add("promo__burger-active");
         })
+        
     })
+
     menuWrapper.addEventListener('click', (e) => {
         if (e.target.classList.contains("menu")) {
             hideMenu(e.target);

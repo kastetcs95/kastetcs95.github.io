@@ -1,0 +1,50 @@
+.slider {
+    display: flex;
+    align-items: center;
+    &__item {
+        display: none;
+        &-active {
+            max-width: 400px;
+            min-height: 380px;
+            border: 1px solid black;
+            display: block;
+        }
+        ul {
+            padding: 20px 30px 20px 50px;
+            list-style-type: none;
+            
+            li {
+                font-size: 15px;
+                padding-top: 10px;
+                position: relative;
+                color: rgba(0,0,0,0.5);
+                &:before {
+                    content: "";
+                    background: url("../icons/check.png") no-repeat center/80%;
+                    position: absolute;
+                    top:10px;
+                    left: -20px;
+                    width: 15px;
+                    height: 15px;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+    &__prev, &__next {
+        cursor: pointer;
+        max-width: 50px;
+        margin: 0 30px;
+        img {
+            width: 100%; 
+        }
+    }
+
+    &__text {
+        padding-top: 20px;
+        text-align: center;
+    }
+}

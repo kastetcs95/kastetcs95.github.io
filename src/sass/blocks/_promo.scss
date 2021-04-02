@@ -1,34 +1,43 @@
 .promo {
-    background: rgba(190, 190, 190, 0.5);
+    padding-top: 100px;
     padding-bottom: 30px;
     &__header {
         display: flex;
         justify-content: space-between; 
+        position: fixed;
+        top: 0;
+        background: url("../image/header.jpg") 80%/cover;
+        
         width: 100%;
         border-bottom: 1px solid black;
+        z-index: 1000;
     }
     &__icon {
         padding: 10px 0;
         margin-left: 20px;
         height: 100px;
+        
         img {
             display: relative;
             height: 100%;
         }
     }
     &__menu {
-        max-width: 500px;
+        width: 70%;
         display: flex;
         align-items: center;
+        justify-content: space-around;
+        padding-right: 10px;
     }
     &__link {
-        padding: 0 20px;
-        color: #000;
+        padding: 0;
+        color: rgb(47,53,59);
+        
         text-decoration: none;
         font-size: 20px;
         
         &:hover {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid rgb(47,53,59);
         }
     }
     &__content {

@@ -1,7 +1,9 @@
 .skills {
     margin-top: 50px;
-    
+    background-color: rgba(190, 190, 190, 0.5);
+    padding-bottom: 50px;
     &__title {
+        padding-top: 50px;
         text-align: center;
     }
     &__wrapper {
@@ -22,7 +24,7 @@
         cursor: pointer;
         padding: 10px;
         &-active {
-            color: rgba(0,0,0,0.5);
+            font-size: 21px;
             text-decoration: underline;
         }
         

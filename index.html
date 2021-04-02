@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +12,24 @@
     
 </head>
 <body>
+
+    <div class="promo__header">
+        <div class="promo__icon">
+            <a href="#promo"><img src="src/image/promo-icon.png" alt="promo-icon"></a>
+        </div>
+        <nav class="promo__menu">
+            <a href="#about-me" class="promo__link">Обо мне</a>
+            <a href="#stages" class="promo__link">Этапы обучения</a>
+            
+            <a href="#skills" class="promo__link">Навыки</a>
+            <a href="#projects" class="promo__link">Проекты</a>
+            <div class="promo__burger"><span></span><span></span></div>
+        </nav>
+        </div>
+
     <section id="promo" class="promo">
         <div class="container">
-            <div class="promo__header">
-            <div class="promo__icon">
-                <img src="src/image/promo-icon.png" alt="promo-icon">
-            </div>
-            <nav class="promo__menu">
-                <a href="#about-me" class="promo__link">Обо мне</a>
-                <a href="#skills" class="promo__link">Навыки</a>
-                <a href="#projects" class="promo__link">Проекты</a>
-                <div class="promo__burger"><span></span><span></span></div>
-            </nav>
-            </div>
+            
             <div class="promo__content">
                 <div class="promo__img">
                     <img src="src/image/content.png" alt="content">
@@ -36,12 +41,13 @@
                     <div class="title title-fz15 promo__subtitle">
                         Практика создания HTML, CSS и JavaScript для веб-сайта или веб-приложения, чтобы пользователь мог напрямую видеть и взаимодействовать с ними. Задача, связанная с разработкой интерфейса, заключается в том, что инструменты и методы, используемые для его создания, постоянно меняются, и поэтому разработчик должен всегда быть в курсе, как эта сфера развивается.
                     </div>
+                    <span id="about-me"></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about-me" class="about-me">
+    <section class="about-me">
         <div class="container">
         <div class="title about-me__title title-fz25">
             Обо мне
@@ -57,35 +63,60 @@
         <div class="about-me__photo">
             <img src="src/image/photo.jpg" alt="about-me-photo">
         </div>
+        
     </div>
-    </div>
-    <div class="about-me__wrapper">
-        <div class="container">
-    <div class="about-me__experience">
-        <div class="about-me__content">
-            <div class="about-me__img"><img src="src/icons/university.png" alt="university"></div>
-            <div class="about-me__text title-fz15">Белорусский государственный университет информатики и 
-                радиоэлектроники
+    <span id="stages"></span>
+ </div>
+</section>
+<section class="stages">
+ <div class="container">
+    <div class="stages__experience">
+        <div class="stages__title title-fz25">Этапы обучения</div>
+        <div class="slider">
+            <div class="slider__prev"><img src="src/icons/prev.png" alt=""></div>
+            <div class="slider__item">
+                <div class="title slider__text">Белорусский государственный университет информатики и 
+                    радиоэлектроники
+                </div>
+                <ul>
+                    <li>Дисциплины: Объектно-ориентированное программирование, Разработка веб-приложений, Технологии разработки программного обеспечения, Базы данных и др.</li>
+                    <li>Технологии и языки программирования: C/C++, Java, HTML, CSS, JavaScript, UML.</li>
+                    <li>Курсовые работы: Автоматизированная система учета товаров на складе (Java), Оптимизация работы библиотеки (C++), Система по контролю и учету грузовых перевозок (JavaScript).</li>
+                </ul>
             </div>
-        </div>
-        <div class="about-me__content">
-            <div class="about-me__img"><img src="src/icons/online-course.png" alt="university"></div>
-            <div class="about-me__text title-fz15">Оффлайн-курсы udemy.com</div>
-        </div>
-        <div class="about-me__content">
-            <div class="about-me__img"><img src="src/icons/youtube.png" alt="university"></div>
-            <div class="about-me__text title-fz15">Видео-ролики Youtube</div>
-        </div>
-        <div class="about-me__content">
-            <div class="about-me__img"><img src="src/icons/world.png" alt="university"></div>
-            <div class="about-me__text title-fz15">Статьи разных ресуров в интернете</div>
-        </div>
-    </div>
-</div>
-</div>
-    </section>
 
-    <section id="skills" class="skills">
+            <div class="slider__item">
+                <div class="title slider__text">Офлайн курсы udemy.com
+                </div>
+                <ul>
+                    <li>Web-разработчик 2021: основы HTML и CSS, препроцессоры SASS/SCSS, Bootstrap, адаптивность по разные устройства, методология БЭМ, анимации, Flexbox, CSS Grid.</li>
+                    <li>Полный курс по JavaScript + React - с нуля до результата: основы JavaScript, замыкания, деструктуризация, контекст вызова, Promise, Fetch, асинхронность, модули, React: пропсы, состояние, компоненты жизненного цикла, React Router, React Context, Redux</li>
+                </ul>
+            </div>
+
+            <div class="slider__item">
+                <div class="title slider__text">Ресурсы в интернете
+                </div>
+                <ul>
+                    <li><a href="https://html5book.ru/" target="_blank">HTML5BOOK.RU - HTML, CSS, JavaScript и jQuery</a></li>
+                    <li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник JavaScript</a></li>
+                    <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank">JavaScript | MDN</a></li>
+                    <li><a href="https://reactjs.org/" target="_blank">React – A JavaScript library for building user interfaces</a></li>
+                    <li><a href="https://redux.js.org/" target="_blank">Redux - A predictable state container for JavaScript apps.</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Materials from YouTube</a></li>
+                </ul>
+            </div>
+                            
+            <div class="slider__next"><img src="src/icons/next.png" alt=""></div>
+        </div>
+
+    </div>
+    <span id="skills"></span>
+</div>
+</section>
+    
+
+    <section class="skills">
         <div class="container">
             <div class="title skills__title title-fz25">
                 Навыки
@@ -148,13 +179,14 @@
                         <div class="title skills__content title-fz15">Git – это распределенная система контроля версий и управления исходным кодом с упором на скорость. Первоначально Git был разработан и разработан Линусом Торвальдсом для разработки ядра Linux. Git – это бесплатное программное обеспечение, распространяемое в соответствии с условиями GNU General Public License версии 2. Основное отличие Git от любой другой СКВ (включая Subversion и её собратьев) — это подход к работе со своими данными. Концептуально, большинство других систем хранят информацию в виде списка изменений в файлах. Эти системы (CVS, Subversion, Perforce, Bazaar и т. д.) представляют хранимую информацию в виде набора файлов и изменений, сделанных в каждом файле, по времени. Git не хранит и не обрабатывает данные таким способом.</div>
                         <div class="skills__image"><img src="src/image/tabs/git.png" alt="Git"></div>
                     </div>
+                    <span id="projects"></span> 
                 </div>
             </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section class="projects">
         <div class="container">
             <div class="title projects__title title-fz25">Проекты</div>
             <div class="projects__items">
@@ -190,6 +222,7 @@
     <div class="menu">
         <div class="menu__block">
             <a href="#about-me" class="menu__link">Обо мне</a>
+            <a href="#stages" class="menu__link">Этапы обучения</a>
             <a href="#skills" class="menu__link">Навыки</a>
             <a href="#projects" class="menu__link">Проекты</a>
         </div>
