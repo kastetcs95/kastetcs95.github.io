@@ -5,7 +5,7 @@
         text-align: center;
     }
     &__wrapper {
-        margin: 50px 20px 0 20px;
+        margin: 40px 20px 0 20px;
     }
     &__list {
         display: flex;
@@ -15,14 +15,17 @@
             width: 1px;
             background: rgba(0, 0, 0, .3);
         }
+        
     }
     &__item {
+        position: relative;
         cursor: pointer;
         padding: 10px;
         &-active {
             color: rgba(0,0,0,0.5);
             text-decoration: underline;
         }
+        
     }
     &__content {
         width: 50%;
@@ -48,6 +51,7 @@
             width: 100%;
         }
     }
+}
 .faded {
     animation-name: faded;
     animation-duration: 1.5s;
@@ -60,6 +64,4 @@
     to {
         opacity: 1;
     }
-}
-    
 }

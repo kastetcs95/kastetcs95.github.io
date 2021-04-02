@@ -109,13 +109,14 @@ html, body {
                 background: black;
                 height: 2px;
                 width: 100%;
-                
+                transition: 0.3s all;
                 &:last-child {
                     top: 10px;
                 }
                 
             }
             &-active {
+                transition: 0.3s all;
                 &:nth-child(1){
                     top: 10px;
                     transform: rotate(135deg);
