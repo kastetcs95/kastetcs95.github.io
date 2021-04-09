@@ -1,6 +1,8 @@
 .skills {
-    margin-top: 50px;
-    background-color: rgba(190, 190, 190, 0.5);
+    border-top: 80px solid transparent;
+    margin-top: -80px;
+    background-clip:padding-box;
+    background-color: $mainColor;
     padding-bottom: 50px;
     &__title {
         padding-top: 50px;
@@ -17,7 +19,6 @@
             width: 1px;
             background: rgba(0, 0, 0, .3);
         }
-        
     }
     &__item {
         position: relative;
@@ -27,7 +28,6 @@
             font-size: 21px;
             text-decoration: underline;
         }
-        
     }
     &__content {
         width: 50%;
@@ -40,7 +40,6 @@
     }
     &__tab {
         display: none;
-        
         &-active {
             transition: 1s all;
             display:flex
@@ -48,12 +47,12 @@
     }
     &__image {
     width: 50%;
-    
         img {
             width: 100%;
         }
     }
 }
+
 .faded {
     animation-name: faded;
     animation-duration: 1.5s;

@@ -1,6 +1,8 @@
 .projects {
-    margin-top: 50px;
-    padding-bottom: 50px;
+    border-top: 80px solid transparent;
+    margin-top: -80px;
+    background-clip:padding-box;
+    padding: 50px;
     &__items {
         margin-top: 40px;
         display: flex;
@@ -24,8 +26,6 @@
         img {
             width: 100%;
             object-fit: cover;
-            
-            
         }
     }
 }

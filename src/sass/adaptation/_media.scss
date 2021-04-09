@@ -1,0 +1,175 @@
+@media (max-width: 720px) {
+    .promo {
+        &__link {
+            font-size: 15px;
+        }
+    }
+    .title-fz30 {
+        font-size: 25px;
+    }
+    .about-me {
+        &__subtitle {
+            line-height: 20px;
+            font-size: 15;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .promo {
+        .title {
+            padding-top: 30px;
+            font-size: 25px;
+            padding-right: 50px;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__img {
+            height:150px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .about-me {
+        &__photo {
+            display: none;
+        }
+        &__subtitle {
+            line-height: 25px;
+            width: 100%;
+            margin-top: -20px;
+        }
+    }
+    .skills {
+        &__image {
+            padding-top: 20px;
+        }
+        &__content {
+            width: 100%;
+            margin-right: 0;
+        }
+        &__tab-active {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .slider {
+        &__text {
+            font-size: 15px;
+        }
+        &__item {
+            ul {
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+        &__prev, &__next {
+            max-width: 25px;
+        }
+    }
+}
+
+@media (max-width: 468px) {
+    .promo {
+        &__link {
+            font-size: 14px;
+            padding: 0 8px;
+            display: none;
+        }
+        &__icon {
+            height: 70px;
+            img {
+                height: 100%;
+            }
+        }
+        &__burger {     
+            position: relative;
+            margin-left: 70%;
+            cursor: pointer;       
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            span {
+                position: absolute;
+                left: 0;
+                background: rgb(47,53,59);
+                height: 2px;
+                width: 100%;
+                transition: 0.3s all;
+                &:last-child {
+                    top: 10px;
+                }
+            }
+            &-active {
+                transition: 0.3s all;
+                &:nth-child(1){
+                    top: 10px;
+                    transform: rotate(135deg);
+                }         
+                &:nth-child(2) {
+                    transform: rotate(45deg);
+                    top: 8px;
+                }
+            }
+        }
+        
+    }
+    .projects {
+        &__link {
+            img {
+                
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+    .slider {
+        &__item {
+            ul {
+                padding: 20px 10px 20px 25px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 395px) {
+    .promo {
+        &__title {
+            margin: 0;
+        }
+        .title {
+            padding-top: 0px;
+            font-size: 25px;
+            padding-left: 30px;
+        }
+        &__img {
+            height:70px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            font-size: 10px;
+        }
+    }
+    .slider {
+        &__text {
+            font-size: 10px;
+        }
+        &__item {
+            ul {
+                padding-right: 5px;
+                li {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}

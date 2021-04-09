@@ -1,6 +1,12 @@
+#about-me {
+
+}
 .about-me {
-    background: rgba(190, 190, 190, 0.5);
+    background: $mainColor;
     padding: 50px 0;
+    border-top: 80px solid transparent;
+    margin-top: -80px;
+    background-clip:padding-box;
     &__title {
         width: 100%;
         text-align: center;
@@ -22,7 +28,5 @@
             margin-left: 50%;
             transform: translateX(-50%);
         }
-    }
-    
-    
+    }   
 }

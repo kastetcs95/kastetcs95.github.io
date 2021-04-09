@@ -7,7 +7,6 @@
         position: fixed;
         top: 0;
         background: url("../image/header.jpg") 80%/cover;
-        
         width: 100%;
         border-bottom: 1px solid black;
         z-index: 1000;
@@ -16,7 +15,6 @@
         padding: 10px 0;
         margin-left: 20px;
         height: 100px;
-        
         img {
             display: relative;
             height: 100%;
@@ -32,16 +30,13 @@
     &__link {
         padding: 0;
         color: rgb(47,53,59);
-        
         text-decoration: none;
         font-size: 20px;
-        
         &:hover {
             border-bottom: 1px solid rgb(47,53,59);
         }
     }
     &__content {
-        
         margin-top: 50px;
         display: flex;
         justify-content: space-between;
